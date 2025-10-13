@@ -12,5 +12,7 @@
 6609.109 0.228 
 fwhm_obs_mean = 0.184
 lamda_mean = 5804.055
+R_obs=lamba_mean/fwhm_mean=31544
 fwhm_add (fwhm_instr+other) = 0.15445
-R = lamda_mean/ fwhm_add = 5804.055/0.15445 = 37577.922 ==> inst+ add
+R_add = lamda_mean/ fwhm_add = 5804.055/0.15445 = 37577.922 ==> inst+ rot
+delta_velocity=c/R_add=7.98 km/s
