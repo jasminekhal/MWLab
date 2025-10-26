@@ -1,0 +1,9 @@
+help #to know how to use it, help commandname to know how to use the command
+inp listobs #check parameters of listobs before interactive mode
+vis = 'filename' #set the file of listobs then inp listobs to check
+plotants('filename') # plot antennas 
+plotms #open the interactive window, if there has been something, close the window and use 'default plotms'
+#in plotms, in browse to select the filename. in the axes, to plot UV plane by selecting Uwave Vwave. to plot the amplitude and time, set AMP and time to x and y axis. 
+#you can also in data-selection to choose the scan, the field you wan to plot.
+#check the log window to find the data you don't need
+inp flagdata #check everything
