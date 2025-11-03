@@ -1,0 +1,31 @@
+caltable='3C391.antpos'
+
+caltype='antpos'
+
+gencal
+
+inp setjy
+
+setjy(vis='3C391.ms',field='J1331+3030',standard='Perley-Butler 2017', model='3C286_C.im', usescratch=False, scalebychan=True,spw='')
+
+gaincal(vis='3C391.ms',caltable='3C391.G0',field='0',refant='ea21',spw='0:27~36',calmode='p',solint='int',minsnr=5,gaintable=['3C391.antpos'])
+
+gaincal(vis='3C391.ms',caltable='3C391.K0',field='0',refant='ea21',spw='0:5~58',gaintype='K',solint='inf',minsnr=5,gaintable=['3C391.antpos','3C391.G0'])
+
+bandpass(vis='3C391.ms',caltable='3C391.B0',field='0',spw='',refant='ea21',solint='inf',bandtype='B',gaintable=['3C391.antpos','3C391.G0','3C391.K0'])
+
+applycal(vis='3C391.ms',field='0',gaintable=['3C391.G0','3C391.K0','3C391.B0'],gainfield=['0','0',''],interp=['','',''])
+
+gaincal(vis='3C391.ms',caltable='3C391.G1',field='J1331+3030',refant='ea21',spw='0:5~58',gaintype='G',solint='inf',calmode='ap',solnorm=False,minsnr=5,gaintable=['3C391.antpos','3C391.K0','3C391.B0'],interp=['linear','linear','nearest'])
+
+gaincal(vis='3C391.ms',caltable='3C391.G1',field='J1822-0938',refant='ea21',spw='0:5~58',gaintype='G',solint='inf',calmode='ap',solnorm=False,gaintable=['3C391.antpos','3C391.K0','3C391.B0'],append=True)
+
+fluxscale(vis='3C391.ms',caltable='3C391.G1',fluxtable='3C391.fluxscale1',reference='0',transfer=['J1822-0938'],incremental=False)
+
+do it to both fields ---> applycal(vis='3C391.ms',field='0',gaintable=['3C391.antpos','3C391.fluxscale1','3C391.K0','3C391.B0'],gainfield=['','0','',''],interp=['','nearest','',''],calwt=False)
+
+applycal(vis='3C391.ms',field='2',gaintable=['3C391.antpos','3C391.fluxscale1','3C391.K0','3C391.B0'],gainfield=['','1','',''],interp=['','linear','',''],calwt=False)
+
+split(vis='3C391.ms',outputvis='3C391_calibrated.ms',datacolumn='corrected',field='2',correlation='RR,LL',keepflags=False)
+
+tclean(vis='MS0735-VLA_calibrated.ms', imagename='MS0735_test', cell='2arcsec', imsize=540,niter=10000, threshold='0.03mJy',interactive=True, savemodel='none', stokes = 'I')
