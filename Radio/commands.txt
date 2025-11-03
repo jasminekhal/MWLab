@@ -1,0 +1,8 @@
+Download file
+listobs(vis='RBS797.ms')
+plotants
+plotms #to check if everythins works well
+inp flagdata #flag data at integration time at the beginning of each scan, and flag the first scan
+gencal
+setjy(vis='RBS797.ms',field='0',standard='Perley-Butler 2017', model='3C286_L.im', usescratch=False, scalebychan=True,spw='') 
+gaincal(vis='RBS797.ms',caltable='RBS797.G0',field='0',refant='ea23',spw='0:27~36',calmode='p',solint='int',minsnr=5,gaintable=['RBS797.antpos'])
