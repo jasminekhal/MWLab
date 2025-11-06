@@ -1,0 +1,12 @@
+angular resolution = 1/312800*206265=0.6594149616368287 ~ 0.66 = size of the beam = 0.11*6
+largest angular scale = 1/4300*206265=47.96860465116279 ~ 47.97
+
+average central frequency = (2051+2563)/2 = 2307 Mhz
+average central lambda = c/2307 = 13 cm
+
+central frequency = spw0 2051, spw2 2563
+central lambda = spw0 14.63 cm,spw2 11.70cm
+
+(average) FOV = 13/2500*206265 = 1072.6 arcsec
+
+cell size = angular resolution /6 = 0.11 (6 is our choise, should respect niquist criterium aka at least 2)
