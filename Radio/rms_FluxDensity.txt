@@ -1,0 +1,13 @@
+rms
+1.599e-5
+1.816e-5
+1.647e-5
+1.824e-5
+average = 1.722e-5
+flux density
+-first method (not reliable): we draw an ellipse and measure: 5.676e-3 jy/beam
+-contour method:
+flux density = 6.26e-3 jy/beam 
+number of beams = Npts/ Beam area = 934/102.999 = 9.068
+flux = 0.0567 Jy
+delta_S = 0.0028354741965906163 ~ 5% flux (from equation in pdf page 8)
