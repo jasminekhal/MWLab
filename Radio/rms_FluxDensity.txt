@@ -7,7 +7,37 @@ average = 1.722e-5
 flux density
 -first method (not reliable): we draw an ellipse and measure: 5.676e-3 jy/beam
 -contour method:
-flux density = 6.26e-3 jy/beam 
-number of beams = Npts/ Beam area = 934/102.999 = 9.068
-flux = 0.0567 Jy
-delta_S = 0.0028354741965906163 ~ 5% flux (from equation in pdf page 8)
+flux density (at 6 sigma) = 6.26e-3 jy/beam
+flux density (at 3 sigma) = 7.79e-3 jy/beam
+
+number of beams (6 sigma) = Npts/ Beam area = 934/102.999 = 9.068
+number of beams (3 sigma) = 3211/102.99 = 31.175
+
+flux (6 sigma) = 0.0567 Jy
+flux (3 sigma) = 0.2429 Jy
+
+delta_S (6 sigma) = 0.0028354741965906163 ~ 5% flux (from equation in pdf page 8)
+delta_S (3 sigma) = 0.012145380573406089 ~ 5% flux
+
+To convert flux density to radio liminosity:
+-calculate luminosity distance DL from cosmological calculator: is 1068.3 Mpc or 3.484 Gly. 
+- use equation from this paperto calculate final radio liminosity: https://arxiv.org/pdf/1804.10047 (eq. 80  convert the flux density S1.2 [mJy] to monochromatic radio luminosity Lν [W/Hz], accounting for the spectral index α = −2.5 for the K-correction)
+L = 4372.511 W Hz^-1
+
+SPW0
+rms(e-5) = (2.83+2.626+3.01+2.45)/4 = 2.729
+flux density=8.786e-3 jy/beam
+number of beams = 3477 / 126.769 = 27.19
+flux = 0.2389 jy
+delta_S = 0.0119 ~ 4.7% flux
+
+SPW2
+rms(e-5) = (1.83+1.86+1.82+1.76) / 4 =1.817
+flux density = 6.278e-3 jy/beam
+number of beams = 1565/87.1528=17.956
+flux = 0.1128 jy
+delta_S = 0.00564 ~ 5% flux
+
+--->
+alpha = log (s0/s2)/log(f0/f2) = -3.3674016362610844
+delat alpha = -0.31670318217749377
