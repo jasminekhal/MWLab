@@ -41,3 +41,7 @@ delta_S = 0.00564 ~ 5% flux
 --->
 alpha = log (s0/s2)/log(f0/f2) = -3.3674016362610844
 delat alpha = -0.31670318217749377
+
+ds9
+source extended height 5.518'' width 3.133''
+
