@@ -22,7 +22,7 @@ delta_S (3 sigma) = 0.012145380573406089 ~ 5% flux
 To convert flux density to radio liminosity:
 -calculate luminosity distance DL from cosmological calculator: is 1068.3 Mpc or 3.484 Gly. 
 - use equation from this paperto calculate final radio liminosity: https://arxiv.org/pdf/1804.10047 (eq. 80  convert the flux density S1.2 [mJy] to monochromatic radio luminosity Lν [W/Hz], accounting for the spectral index α = −2.5 for the K-correction)
-L = 4372.511 W Hz^-1
+L = 4.42×10^25 WHz−1
 
 SPW0
 rms(e-5) = (2.83+2.626+3.01+2.45)/4 = 2.729
