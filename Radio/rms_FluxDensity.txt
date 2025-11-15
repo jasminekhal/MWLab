@@ -26,21 +26,21 @@ L = 4372.511 W Hz^-1
 
 SPW0
 rms(e-5) = (2.83+2.626+3.01+2.45)/4 = 2.729
-flux density=8.786e-3 jy/beam
+flux density/beam=8.786e-3 jy/beam
 number of beams = 3477 / 126.769 = 27.19
-flux = 0.2389 jy
+flux density= 0.2389 jy
 delta_S = 0.0119 ~ 4.7% flux
 
 SPW2
 rms(e-5) = (1.83+1.86+1.82+1.76) / 4 =1.817
-flux density = 6.278e-3 jy/beam
+flux density/beam = 6.278e-3 jy/beam
 number of beams = 1565/87.1528=17.956
-flux = 0.1128 jy
+flux density= 0.1128 jy
 delta_S = 0.00564 ~ 5% flux
 
 --->
-alpha = log (s0/s2)/log(f0/f2) = -3.3674016362610844
-delat alpha = -0.31670318217749377
+alpha = log (s0/s2)/log(f0/f2) = -1.598
+delat alpha = -0.326
 
 ds9
 source extended height 5.518'' width 3.133''
