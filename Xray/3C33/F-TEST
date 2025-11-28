@@ -11,7 +11,37 @@ for the soft part we also begin with power law and galactiv Nh, then we fit agai
 
 So we
 
-ftest 
 
-85/50
-80/?8
+first f test btw baseline power law and intrinsic nh in hard spectrum: ftest 44.39 32 76.24 33
+ F statistic value = 22.9601 and probability 3.63747e-05
+//
+second ftest btw the previous model and an addition of fe - k line: ftest 31.58 30 44.39 32
+ F statistic value = 6.08455 and probability 0.00605208
+///
+Errors:
+intrinsic Nh: 
+Parameter   Confidence Range (2.706)
+     2      17.9865      42.6335    (-12.164,12.483)
+
+fe line energy:
+ Parameter   Confidence Range (2.706)
+     4      6.32351      6.48391    (-0.0796755,0.0807266)
+
+fe line normalization
+***Warning: Identical values of the parameter give different values of the statistic.
+Please check your result for the high end of the confidence range.
+     7   8.8301e-06  2.28716e-05    (-6.8198e-06,7.22171e-06)
+
+photo index of hard power law
+Parameter   Confidence Range (2.706)
+     8     0.676999      1.63043    (-0.477839,0.475592)
+
+normalization of power law
+Confidence Range (2.706)
+9  0.000200477   0.00194287    (-0.000429666,0.00131273)
+
+segma 
+ Confidence Range (2.706)
+5            0     0.220909    (-0.0843233,0.136586)
+
+
